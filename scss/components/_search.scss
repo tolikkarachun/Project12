@@ -1,0 +1,27 @@
+.search {
+  border-radius: 50px;
+  background: var(--c-black);
+  padding: 14rem 15rem 14rem 18rem;
+  position: relative;
+  @include tablet {
+    display: none;
+  }
+  &__imput {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    display: inline-block;
+    background: transparent;
+    font-family: var(--ff);
+    color: var(--c-text-white);
+    padding-right: 29rem;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 15rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}

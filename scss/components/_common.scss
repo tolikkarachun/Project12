@@ -1,0 +1,32 @@
+.title {
+  margin-top: 111rem;
+  color: var(--c-paragraph);
+  font-size: 48rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 70rem;
+}
+
+.desc {
+  max-width: 837rem;
+  color: var(--c-paragraph);
+  text-align: center;
+  font-size: 16rem;
+  font-weight: 400;
+  margin-inline: auto;
+  margin-bottom: 125rem;
+}
+.btn {
+  border-radius: 50px;
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  padding: 11rem 49rem;
+  color: var(--c-terciary);
+  font-size: 20rem;
+  font-weight: 600;
+  &._primary {
+    background: var(--c-primary);
+  }
+}

@@ -1,0 +1,65 @@
+.servises {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(370rem, 1fr));
+  gap: 30rem;
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service {
+  border-radius: 15px;
+  background: var(--c-terciary);
+  padding: 46rem 26rem 47rem 26rem;
+  text-align: center;
+  transition: var(--transition);
+
+  &:hover {
+    transform: translateY(-5px);
+    background: var(--c-primary);
+
+    .service__title,
+    .service__desc,
+    a {
+      color: var(--c-text-white);
+    }
+
+    svg path {
+      fill: var(--c-text-white);
+    }
+  }
+  &__img {
+    width: 110rem;
+    height: 110rem;
+    margin: 0 auto;
+    margin-bottom: 27rem;
+  }
+
+  &__title {
+    color: var(--c-paragraph);
+    font-size: 24rem;
+    font-weight: 600;
+    margin-bottom: 17rem;
+  }
+
+  &__desc {
+    color: var(--c-text);
+    text-align: center;
+    font-size: 16rem;
+    font-weight: 400;
+    margin-bottom: 18rem;
+  }
+
+  &__btn {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      color: var(--c-primary);
+      font-size: 16rem;
+      font-weight: 600;
+      text-decoration-line: underline;
+    }
+  }
+}

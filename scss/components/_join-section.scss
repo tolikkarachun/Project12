@@ -1,0 +1,50 @@
+.join-section {
+  padding-top: 80rem;
+  padding-bottom: 80rem;
+  border-radius: 10px;
+  background: var(--c-dark);
+  margin-bottom: 130rem;
+  @include mobile {
+    padding: 80rem 20rem;
+  }
+  &__title {
+    color: var(--c-text-white);
+    font-size: 36rem;
+    font-weight: 700;
+    margin-bottom: 47rem;
+    text-align: center;
+  }
+
+  &__subscribe {
+    max-width: 717rem;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+    border-radius: 50px;
+    padding: 10rem 15rem;
+    background: var(--c-terciary);
+    @include tablet {
+      flex-direction: column;
+      gap: 30rem;
+      background: transparent;
+      .join-section__input {
+        border-radius: 50px;
+        padding: 10rem 15rem;
+        background: var(--c-terciary);
+      }
+    }
+  }
+
+  &__input {
+    padding-left: 16rem;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+  }
+
+  &__btn {
+  }
+}

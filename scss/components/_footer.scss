@@ -1,0 +1,68 @@
+.footer {
+  background: var(--c-terciary);
+  padding: 106rem 12rem 81rem 12rem;
+  &__container {
+    display: flex;
+    gap: 108rem;
+    @include desktop-small {
+      gap: 20rem;
+    }
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__about {
+  }
+
+  &__logo {
+    display: inline-block;
+    color: var(--c-paragraph);
+    font-size: 24rem;
+    font-weight: 600;
+    margin-bottom: 26rem;
+  }
+
+  &__desc {
+    max-width: 431rem;
+    color: var(--c-paragraph);
+    font-size: 16rem;
+    font-weight: 400;
+  }
+
+  &__info {
+  }
+
+  &__info-header {
+    color: var(--c-paragraph);
+    font-size: 20rem;
+    font-weight: 600;
+    margin-bottom: 9rem;
+  }
+
+  &__info-value {
+    display: inline-flex;
+    gap: 16rem;
+    color: var(--c-paragraph);
+    font-size: 16rem;
+    font-weight: 400;
+    margin-bottom: 37rem;
+  }
+
+  &__hours {
+  }
+
+  &__hours-heder {
+    color: var(--c-paragraph);
+    font-size: 20rem;
+    font-weight: 600;
+    margin-bottom: 9rem;
+  }
+
+  &__hours-value {
+    color: var(--c-paragraph);
+    font-size: 16rem;
+    font-weight: 400;
+    margin-bottom: 16rem;
+  }
+}
