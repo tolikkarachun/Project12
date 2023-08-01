@@ -3,11 +3,6 @@
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
- * Copyright 2014-2023 Vladimir Kharlampidi
- *
- * Released under the MIT License
- *
- * Released on: February 28, 2023
  */
 
 @font-face {
@@ -30,7 +25,9 @@ swiper-container {
     list-style: none;
     padding: 0;
     z-index: 1;
-    display: block
+    display: block;
+    border-radius: 35rem;
+    
 }
 
 .swiper-vertical>.swiper-wrapper {
@@ -201,17 +198,17 @@ swiper-slide {
 }
 
 .swiper-lazy-preloader {
-    width: 42px;
-    height: 42px;
+    width: 42rem;
+    height: 42rem;
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -21px;
-    margin-top: -21px;
+    margin-left: -21rem;
+    margin-top: -21rem;
     z-index: 10;
     transform-origin: 50%;
     box-sizing: border-box;
-    border: 4px solid var(--swiper-preloader-color, var(--swiper-theme-color));
+    border: 4rem solid var(--swiper-preloader-color, var(--swiper-theme-color));
     border-radius: 50%;
     border-top-color: transparent
 }
